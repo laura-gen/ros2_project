@@ -1,0 +1,5 @@
+#to avoid copying unnecessary files into the build context
+.git
+*.log
+build/
+install/
