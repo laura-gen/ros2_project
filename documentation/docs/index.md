@@ -17,7 +17,6 @@
 ## table of contents 
 
 - [Advantages of using Docker](#advantages-of-using-docker)
-- [Setting up the environment and documentation viewing](#setting-up-the-environment-and-documentation-viewing)
 - [Installation of Docker Desktop on Windows 11](#installation-of-docker-desktop-on-windows-11)
 - [Installation of VS Code](#installation-of-vs-code)
 - [Installation of Ubuntu on Windows11 via WSL2](#installation-of-ubuntu-on-windows11-via-wsl2)
@@ -40,43 +39,6 @@ The Docker container is an isolated virtual environment, so there will be no cha
 
 ---
 
-# Setting up the environment and documentation viewing
-
-##### Setting up the environment
-
-```bash
-git clone https://github.com/laura-gen/ros2-project #Clone the Git repository
-```
-
-You should have:
-
-```bash
-ros2_project/
-├── documentation/
-│   ├── docs/
-│   │   └── index.md    #Markdown file
-│   └── mkdocs.yml
-│
-├── ros2_jazzy_installation/
-│   ├── Dockerfile         
-│   ├── run_dev.sh   #Script to launch the docker
-│   ├── .dockerignore   #Avoid copying unnecessary files into the build context
-│
-└── ros2_ws/
-    ├── src/
-```
-
-##### Documentation viewing
-
-```bash
-sudo apt install mkdocs
-cd ros2_project/documentation
-mkdocs serve #Click on http://127.0.0.1:8000/ to see the documentation 
-```
-
-<br>
-
----
 
 # Installation of Docker Desktop on Windows 11
 
