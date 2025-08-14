@@ -123,21 +123,21 @@ docker ps #You should see : image :"ros2_jazzy_ubuntu24"
 
 
 **On a computer terminal**, check if the computer IP address is 
-in 192.168.1.x form and identify Ethernet interface &lt;eth0&gt; by which robot and computer are connected via ethernet cable: 
+in 192.168.1.x form and identify Ethernet interface e.g eth0 by which robot and computer are connected via ethernet cable: 
 ```bash
 ip a
 ```
 
-If the IP address is not in 192.168.1.x form, assign an IP address <192.168.1.102> to the computer
+If the IP address is not in 192.168.1.x form, assign an IP address 192.168.1.102 for example to the computer
 ```bash
-sudo ip addr flush dev eth0 #Delete all IP addresses associated with network interface <eth0>.
-sudo ip addr add 192.168.1.102/24 dev eth0 #Assign IP address <192.168.1.102> with mask 255.255.255.0 to interface <eth0>.
+sudo ip addr flush dev eth0 #Delete all IP addresses associated with network interface eth0.
+sudo ip addr add 192.168.1.102/24 dev eth0 #Assign IP address 192.168.1.102 with mask 255.255.255.0 to interface eth0.
 ```
 
 **On PolyScope :**   
 
 - Go to Installation → URCaps → External Control   
-- Set Host IP with the IP of the computer <192.168.1.102>  
+- Set Host IP with the IP of the computer 192.168.1.102  
 - Save  
 
 **In the Docker**, check the connexion with the robot : 
